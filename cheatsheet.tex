@@ -1,0 +1,178 @@
+\documentclass{article}
+\usepackage[a4paper, landscape]{geometry}
+\usepackage{multicol}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing,shapes.geometric}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{fontspec}
+
+\setmainfont{Atkinson Hyperlegible}
+
+% Page layout adjustments
+\setlength{\topmargin}{-30mm}
+\setlength{\textheight}{200mm}
+\setlength{\textwidth}{287mm}
+\setlength{\oddsidemargin}{-25mm}
+\setlength{\evensidemargin}{-25mm}
+
+
+% TikZ styles
+\tikzstyle{mybox} = [draw=black, fill=white, very thick, rectangle, rounded corners, inner sep=10pt, inner ysep=10pt]
+\tikzstyle{fancytitle} =[fill=black, text=white, font=\bfseries]
+
+\begin{document}
+
+\begin{center}{\huge{\textbf{LaTeX Cheatsheet Template}}}\end{center}
+\vspace{1mm}
+\raggedcolumns
+\begin{multicols*}{3}
+
+% Column 1: Lists, Tables, Math
+% Box 1: List example
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Example List:}
+        \begin{itemize}[leftmargin=*]
+            \item Point one
+            \item Point two
+            \item Point three
+        \end{itemize}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {List Example};
+\end{tikzpicture}
+
+% Box 2: Table example
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Example Table:}
+        \begin{center}
+        \begin{tabular}{|c|c|c|}
+        \hline
+        Column 1 & Column 2 & Column 3 \\
+        \hline
+        A & B & C \\
+        1 & 2 & 3 \\
+        X & Y & Z \\
+        \hline
+        \end{tabular}
+        \end{center}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Table Example};
+\end{tikzpicture}
+
+% Box 3: Math formula example
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Math Formula:}
+        \[ E = mc^2 \]
+        Example of a displayed equation.
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Math Example};
+\end{tikzpicture}
+
+\columnbreak
+
+% Column 2: Hyperlinks, Graphics, Text Styling
+% Box 4: Hyperlink example
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Hyperlink Example:}
+        \begin{itemize}[leftmargin=*]
+            \item \href{https://www.latex-project.org}{LaTeX Project}
+            \item \href{https://ctan.org}{CTAN Repository}
+        \end{itemize}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Hyperlinks};
+\end{tikzpicture}
+
+% Box 5: Geometric shapes with TikZ
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Geometric Shapes:}
+        \begin{tikzpicture}[scale=0.6]
+            \draw[fill=blue!30] (0,0) circle (1cm);
+            \draw[fill=red!30] (2,0) rectangle (3,1);
+            \draw[fill=green!30] (4,0) -- (5,1) -- (5,-1) -- cycle;
+        \end{tikzpicture}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Shapes Example};
+\end{tikzpicture}
+
+% Box 6: Highlighted text
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Highlighted Text:}
+        \colorbox{yellow}{This is highlighted text.}
+        \textbf{Bold text example.}
+        \textit{Italic text example.}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Text Styling};
+\end{tikzpicture}
+
+\columnbreak
+
+% Column 3: Enumerations, Diagrams, Colors
+% Box 7: Enumerations
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Enumeration Example:}
+        \begin{enumerate}
+            \item First item
+            \item Second item
+            \item Third item
+        \end{enumerate}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Enumerations};
+\end{tikzpicture}
+
+% Box 8: Diagram example
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Flow Diagram:}
+        \begin{tikzpicture}[node distance=1.5cm, auto]
+            \node[draw, circle] (start) {Start};
+            \node[draw, rectangle, right of=start] (process) {Process};
+            \node[draw, diamond, below of=process] (decision) {Decision};
+            \draw[->] (start) -- (process);
+            \draw[->] (process) -- (decision);
+        \end{tikzpicture}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Flow Diagram};
+\end{tikzpicture}
+
+% Box 9: Color example
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Color Example:}
+        \textcolor{red}{This is red text.}
+        \textcolor{blue}{This is blue text.}
+        \textcolor{green}{This is green text.}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Colors};
+\end{tikzpicture}
+
+\end{multicols*}
+\end{document}

@@ -26,214 +26,186 @@
 
 \begin{document}
 
-\begin{center}{\huge{\textbf{Cooking Cheatsheet}}}\end{center}
+\begin{center}{\huge{\textbf{Quick Guide for Cooking U.S. Recipes}}}\end{center}
 \vspace{1mm}
 \raggedcolumns
 \begin{multicols*}{3}
 
+% Dry Volume Measurements
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-        \textbf{Volume Conversions:}
-        
+        \textbf{Dry Volume Measurements:}\\[6pt]
         \begin{tabular}{|c|c|}
         \hline
-        1 Cup & 240 ml \\
-        1 Tablespoon & 15 ml \\
-        1 Teaspoon & 5 ml \\
-        1 Cup & 16 Tablespoons \\
-        1 Tablespoon & 3 Teaspoons \\
-        1 Liter & 4.2 Cups \\
+        1/16 tsp & dash \\ \hline
+        1/8 tsp & pinch \\ \hline
+        3 tsp & 1 tbsp \\ \hline
+        1/8 cup & 2 tbsp \\ \hline
+        1/4 cup & 4 tbsp \\ \hline
+        \end{tabular}\\[8pt]
+
+        \textbf{Cup to Spoon Conversions:}\\[6pt]
+        \begin{tabular}{|c|c|}
         \hline
+        1/3 cup & 5 tbsp + 1 tsp \\ \hline
+        1/2 cup & 8 tbsp \\ \hline
+        3/4 cup & 12 tbsp \\ \hline
+        1 cup & 16 tbsp \\ \hline
+        \end{tabular}\\[8pt]
+
+        \textbf{Weight:}\\[6pt]
+        \begin{tabular}{|c|c|}
+        \hline
+        1 pound (lb) & 16 ounces (oz) \\ \hline
+        1 ounce (oz) & 28.35 grams (g) \\ \hline
+        1 pound (lb) & 453.59 grams (g) \\ \hline
         \end{tabular}
-        
-        \textbf{Weight Conversions:}
-        
+
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Dry Measurements};
+\end{tikzpicture}
+
+% Liquid Measurements
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \textbf{Liquid Measurements (U.S.):}\\[6pt]
         \begin{tabular}{|c|c|}
         \hline
-        1 lb (pound) & 453.6 g \\
-        1 kg & 2.2 lbs \\
-        1 oz (ounce) & 28.3 g \\
-        \hline
+        8 oz & 1 cup \\ \hline
+        1 pint & 2 cups \\ \hline
+        1 quart & 4 cups \\ \hline
+        1 gallon & 16 cups \\ \hline
         \end{tabular}
     \end{minipage}
 };
-\node[fancytitle, right=10pt] at (box.north west) {Measurement Conversions};
+\node[fancytitle, right=10pt] at (box.north west) {Liquid Measurements};
 \end{tikzpicture}
 
-% Temperature Conversions
+% U.S.-Metric Equivalents
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-        \[ C = \frac{(F-32) \times 5}{9} \]
-        
-        \textbf{Oven Temperatures:}
-        
+        \textbf{U.S.-Metric Equivalents:}\\[6pt]
+        \begin{tabular}{|c|c|}
+        \hline
+        1/5 tsp & 1 ml \\ \hline
+        1 tsp & 5 ml \\ \hline
+        1 tbsp & 15 ml \\ \hline
+        1 fl oz & 30 ml \\ \hline
+        1/5 cup & 50 ml \\ \hline
+        1 cup & 240 ml \\ \hline
+        2 cups & 470 ml \\ \hline
+        4 cups & 950 ml (0.95 L) \\ \hline
+        16 cups & 3.8 L \\ \hline
+        \end{tabular}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {U.S.-Metric Equivalents};
+\end{tikzpicture}
+
+% Cooking Temperatures
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
         \begin{tabular}{|c|c|c|}
         \hline
-        \textbf{Description} & \textbf{°F} & \textbf{°C} \\
-        \hline
-        Low & 250-300 & 120-150 \\
-        Moderate & 350-375 & 175-190 \\
-        Hot & 400-425 & 200-220 \\
-        Very Hot & 450-475 & 230-245 \\
-        \hline
-        \end{tabular}
-    \end{minipage}
-};
-\node[fancytitle, right=10pt] at (box.north west) {Temperature Guide};
-\end{tikzpicture}
-
-\begin{tikzpicture}
-\node [mybox] (box){%
-    \begin{minipage}{0.3\textwidth}
-        \textbf{Safe Internal Meat Temperatures:}
-        
-        \begin{tabular}{|l|c|}
-        \hline
-        \textbf{Meat} & \textbf{Safe Temp (°C)} \\
-        \hline
-        Chicken & 74 \\
-        Turkey & 74 \\
-        Ground Beef & 71 \\
-        Beef Steaks/Roasts & 63 \\
-        Pork & 63 \\
-        Fish & 63 \\
-        \hline
-        \end{tabular}
-        
-        \textbf{Beef Doneness Temperatures:}
-        
-        \begin{tabular}{|l|c|}
-        \hline
-        \textbf{Doneness} & \textbf{Temp (°C)} \\
-        \hline
-        Rare & 52-55 \\
-        Medium Rare & 55-60 \\
-        Medium & 60-65 \\
-        Medium Well & 65-70 \\
-        Well Done & 70-75 \\
-        \hline
+        \textbf{Gas Mark} & \textbf{°F} & \textbf{°C} \\ \hline
+        - & 32°F & 0°C (water freezes) \\ \hline
+        - & 212°F & 100°C (water boils) \\ \hline
+        - & 250°F & 121°C \\ \hline
+        1 & 275°F & 135°C \\ \hline
+        2 & 300°F & 150°C \\ \hline
+        3 & 325°F & 163°C \\ \hline
+        4 & 350°F & 177°C \\ \hline
+        5 & 375°F & 190°C \\ \hline
+        6 & 400°F & 205°C \\ \hline
+        7 & 425°F & 218°C \\ \hline
+        8 & 450°F & 233°C \\ \hline
+        9 & 475°F & 246°C \\ \hline
+        - & 500°F & 260°C \\ \hline
         \end{tabular}
     \end{minipage}
 };
 \node[fancytitle, right=10pt] at (box.north west) {Cooking Temperatures};
 \end{tikzpicture}
 
-% Spice Pairings
+% Flours and Grains
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-        \textbf{Spice Pairings:}
-        
-        \begin{tabular}{|l|l|}
+        \begin{tabular}{|c|c|}
         \hline
-        \textbf{Protein} & \textbf{Spices} \\
-        \hline
-        Chicken & Thyme, Rosemary \\
-        Beef & Rosemary, Garlic \\
-        Fish & Dill, Lemon Pepper \\
-        Pork & Sage, Fennel \\
-        \hline
-        \end{tabular}
-        
-        \textbf{Cultural Flavor Guide:}
-        
-        \begin{tabular}{|l|l|}
-        \hline
-        \textbf{Cuisine} & \textbf{Key Spices/Herbs} \\
-        \hline
-        Mexican & Cumin, Chili, Oregano \\
-        Italian & Basil, Oregano, Thyme \\
-        Indian & Turmeric, Cumin, Coriander \\
-        Thai & Lemongrass, Ginger, Chili \\
-        Mediterranean & Za'atar, Mint, Sumac \\
-        \hline
+        Whole Wheat Flour & Harina Integral \\ \hline
+        All-purpose Flour & Harina de Trigo \\ \hline
+        Cornmeal & Harina de Maíz \\ \hline
         \end{tabular}
     \end{minipage}
 };
-\node[fancytitle, right=10pt] at (box.north west) {Spice Guide};
+\node[fancytitle, right=10pt] at (box.north west) {Flours \& Grains};
 \end{tikzpicture}
 
+% Dairy and Eggs
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-        \begin{tabular}{|l|l|}
+        \begin{tabular}{|c|c|}
         \hline
-        \textbf{Ingredient} & \textbf{Substitute} \\
-        \hline
-        1 Egg & 60 ml applesauce \\
-        Buttermilk & Milk + Vinegar \\
-        Butter & Applesauce, Oils \\
-        Flour & Almond meal \\
-        \hline
+        Buttermilk & Leche con limón/vinagre \\ \hline
+        Sour Cream & Crema Agria o Yogurt Natural \\ \hline
         \end{tabular}
     \end{minipage}
 };
-\node[fancytitle, right=10pt] at (box.north west) {Baking Substitutes};
+\node[fancytitle, right=10pt] at (box.north west) {Dairy \& Eggs};
 \end{tikzpicture}
 
-\begin{tikzpicture}
-\node [mybox] (box){%
-    \begin{minipage}{0.3\textwidth}
-        \textbf{Common Ratios:}
-        
-        \begin{tabular}{|l|c|}
-        \hline
-        \textbf{Recipe} & \textbf{Ratio} \\
-        \hline
-        Vinaigrette & 3:1 (Oil:Vinegar) \\
-        Marinade & 3:1:1 (Oil:Acid:Seasoning) \\
-        Stock/Broth & 1.8 kg bones: 3.8 L water \\
-        \hline
-        \end{tabular}
-        
-        \textbf{Grain Cooking Ratios:}
-        
-        \begin{tabular}{|l|c|c|}
-        \hline
-        \textbf{Grain} & \textbf{Water Ratio} & \textbf{Time} \\
-        \hline
-        Rice (White) & 2:1 & 18-20 min \\
-        Rice (Brown) & 2.5:1 & 45-50 min \\
-        Quinoa & 2:1 & 15-20 min \\
-        Pasta & N/A & 8-12 min \\
-        \hline
-        \end{tabular}
-    \end{minipage}
-};
-\node[fancytitle, right=10pt] at (box.north west) {Cooking Ratios};
-\end{tikzpicture}
-
+% Leavening & Yeast
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
         \begin{itemize}[leftmargin=*]
-            \item Oversalted: Add acid/fat
-            \item Bland: Add herbs, salt
-            \item Burnt: Scrape off, add sauce
+            \item Dry Yeast (Typical US packet size: 7 g) = Levadura Seca
+            \item Fresh Yeast = Levadura Fresca
+            \item Baking Soda = Bicarbonato de Sodio
+            \item Baking Powder = Levadura Química or Polvos de Hornear (e.g., Royal)
         \end{itemize}
     \end{minipage}
 };
-\node[fancytitle, right=10pt] at (box.north west) {Cooking Fixes};
+\node[fancytitle, right=10pt] at (box.north west) {Leavening \& Yeast};
 \end{tikzpicture}
 
+% Butter and Cream
 \begin{tikzpicture}
 \node [mybox] (box){%
     \begin{minipage}{0.3\textwidth}
-        \begin{tabular}{|l|c|c|}
-        \hline
-        \textbf{Item} & \textbf{Fridge} & \textbf{Freezer} \\
-        \hline
-        Raw Chicken & 1-2 days & 9 months \\
-        Cooked Meat & 3-4 days & 2-6 months \\
-        Fresh Eggs & 3-5 weeks & Not Recommended \\
-        Milk & 7 days & 3 months \\
-        \hline
-        \end{tabular}
+        \begin{itemize}[leftmargin=*]
+            \item 1 Stick Butter (U.S.) = 113 g.
+            \item Heavy Cream (U.S.) = Nata para Montar (35\%+ M.G. in Spain).
+            \item Half-and-Half (U.S.) ≈ mitad leche + mitad nata (menos grasa que nata para montar).
+        \end{itemize}
+        
+        \textbf{Note:}  
+        “Cream” in Spanish generally translates to “Nata.” The type of cream often varies by fat content, with “Nata para Montar” being the high-fat whipping cream commonly used in baking.
     \end{minipage}
 };
-\node[fancytitle, right=10pt] at (box.north west) {Food Storage};
+\node[fancytitle, right=10pt] at (box.north west) {Butter \& Cream};
+\end{tikzpicture}
+
+% Sweeteners and Syrups
+\begin{tikzpicture}
+\node [mybox] (box){%
+    \begin{minipage}{0.3\textwidth}
+        \begin{itemize}[leftmargin=*]
+            \item Molasses (U.S.) = Melaza (less common in Spain; substitute with dark treacle if available).
+            \item Corn Syrup (U.S.) = Sirope de Maíz (hard to find in Spain; honey or golden syrup can be substitutes).
+            \item Maple Syrup is widely available as “Sirope de Arce.”
+            \item Brown Sugar (U.S.) = Azúcar Moreno (ensure it’s the moist type).
+        \end{itemize}
+    \end{minipage}
+};
+\node[fancytitle, right=10pt] at (box.north west) {Sweeteners \& Syrups};
 \end{tikzpicture}
 
 \end{multicols*}
